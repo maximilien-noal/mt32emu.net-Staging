@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 
 namespace Mt32emu.Interop
 {
+    [UnsupportedOSPlatform("macos")]
     internal static class NativeMethods
     {
         private const string DllName = "libmt32emu";
